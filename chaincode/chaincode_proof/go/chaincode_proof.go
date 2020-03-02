@@ -33,30 +33,14 @@ type Proof struct {
 	Overdue bool `json:overdue`
 }
 
-// Define the Smart Contract structure
 type SmartContract struct {
 }
 
-// Define the car structure, with 4 properties.  Structure tags are used by encoding/json library
-//type Car struct {
-//	Make   string `json:"make"`
-//	Model  string `json:"model"`
-//	Colour string `json:"colour"`
-//	Owner  string `json:"owner"`
-//}
-
-/*
- * The Init method is called when the Smart Contract "fabcar" is instantiated by the blockchain network
- * Best practice is to have any Ledger initialization in separate function -- see initLedger()
- */
 func (s *SmartContract) Init(APIstub shim.ChaincodeStubInterface) sc.Response {
 	return shim.Success(nil)
 }
 
-/*
- * The Invoke method is called as a result of an application request to run the Smart Contract "fabcar"
- * The calling application program has also specified the particular smart contract function to be called, with arguments
- */
+
 func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) sc.Response {
 
 	// Retrieve the requested Smart Contract function and arguments
@@ -93,8 +77,6 @@ func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Respo
 		Proof{Time:time.Local.String(),FilePath:"/home/mikey/fabric1",HashCode:"2e1ecb697ab70115c7d5113af2779d1ba05bf800f72ec5c2566a14ea50b59723",Owner:"Mikey",Overdue:false},
 		Proof{Time:time.Local.String(),FilePath:"/home/mikey/fabric2",HashCode:"3e1ecb697ab70115c7d5113af2779d1ba05bf800f72ec5c2566a14ea50b59723",Owner:"Leo",Overdue:false},
 		Proof{Time:time.Local.String(),FilePath:"/home/mikey/fabric3",HashCode:"4e1ecb697ab70115c7d5113af2779d1ba05bf800f72ec5c2566a14ea50b59723",Owner:"Don",Overdue:false},
-		Proof{Time:time.Local.String(),FilePath:"/home/mikey/fabric4",HashCode:"5e1ecb697ab70115c7d5113af2779d1ba05bf800f72ec5c2566a14ea50b59723",Owner:"Mike",Overdue:false},
-		Proof{Time:time.Local.String(),FilePath:"/home/mikey/fabric5",HashCode:"6e1ecb697ab70115c7d5113af2779d1ba05bf800f72ec5c2566a14ea50b59723",Owner:"Lucy",Overdue:false},
 	}
 
 	i := 0
@@ -165,23 +147,23 @@ func (s *SmartContract) queryAllProof(APIstub shim.ChaincodeStubInterface) sc.Re
 	return shim.Success(buffer.Bytes())
 }
 
-//func (s *SmartContract) changeProofOwner(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
-//
-//	if len(args) != 2 {
-//		return shim.Error("Incorrect number of arguments. Expecting 2")
-//	}
-//
-//	carAsBytes, _ := APIstub.GetState(args[0])
-//	car := Car{}
-//
-//	json.Unmarshal(carAsBytes, &car)
-//	car.Owner = args[1]
-//
-//	carAsBytes, _ = json.Marshal(car)
-//	APIstub.PutState(args[0], carAsBytes)
-//
-//	return shim.Success(nil)
-//}
+func (s *SmartContract) changeProofOwner(APIstub shim.ChaincodeStubInterface, args []string) sc.Response {
+
+	if len(args) != 2 {
+		return shim.Error("Incorrect number of arguments. Expecting 2")
+	}
+
+	proofAsBytes, _ := APIstub.GetState(args[0])
+	proof := Proof{}
+
+	json.Unmarshal(proofAsBytes, &proof)
+	proof.Owner = args[1]
+
+	proofAsBytes, _ = json.Marshal(proof)
+	APIstub.PutState(args[0], proofAsBytes)
+
+	return shim.Success(nil)
+}
 
 // The main function is only relevant in unit test mode. Only included here for completeness.
 func main() {
