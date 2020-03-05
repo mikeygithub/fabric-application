@@ -25,13 +25,13 @@ LANGUAGE=`echo "$LANGUAGE" | tr [:upper:] [:lower:]`
 COUNTER=1
 MAX_RETRY=10
 
-CC_SRC_PATH="github.com/chaincode/chaincode_example02/go/"
+CC_SRC_PATH="github.com/chaincode/chaincode_demo/go/"
 if [ "$LANGUAGE" = "node" ]; then
-	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/chaincode_example02/node/"
+	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/chaincode_demo/node/"
 fi
 
 if [ "$LANGUAGE" = "java" ]; then
-	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/chaincode_example02/java/"
+	CC_SRC_PATH="/opt/gopath/src/github.com/chaincode/chaincode_demo/java/"
 fi
 
 echo "Channel name : "$CHANNEL_NAME
@@ -60,7 +60,7 @@ createChannel() {
 }
 
 joinChannel () {
-	for org in 1 2 3; do
+	for org in 1 2 3 4; do
 	    for peer in 0 1; do
 		joinChannelWithRetry $peer $org
 		echo "===================== peer${peer}.org${org} joined channel '$CHANNEL_NAME' ===================== "
@@ -85,6 +85,8 @@ echo "Updating anchor peers for org2..."
 updateAnchorPeers 0 2
 echo "Updating anchor peers for org3..."
 updateAnchorPeers 0 3
+echo "Updating anchor peers for org3..."
+updateAnchorPeers 0 4
 if [ "${NO_CHAINCODE}" != "true" ]; then
 
 	## Install chaincode on peer0.org1 and peer0.org2
@@ -94,6 +96,8 @@ if [ "${NO_CHAINCODE}" != "true" ]; then
 	installChaincode 0 2
     echo "Install chaincode on peer0.org3..."
 	installChaincode 0 3
+	echo "Install chaincode on peer0.org3..."
+	installChaincode 0 4
 	sleep 5s
 	# Instantiate chaincode on peer0.org2
 	echo "Instantiating chaincode on peer0.org2..."
@@ -108,10 +112,13 @@ if [ "${NO_CHAINCODE}" != "true" ]; then
 	# Query chaincode on peer0.org1
 	echo "Querying chaincode on peer0.org3..."
 	chaincodeQuery 0 3 100
+	# Query chaincode on peer0.org1
+	echo "Querying chaincode on peer0.org3..."
+	chaincodeQuery 0 4 100
 
 	# Invoke chaincode on peer0.org1 and peer0.org2
 	echo "Sending invoke transaction on peer0.org1 peer0.org2..."
-	chaincodeInvoke 0 1 0 2 0 3
+	chaincodeInvoke 0 1 0 2 0 3 0 4
 	
 	## Install chaincode on peer1.org2
 	echo "Installing chaincode on peer1.org2..."

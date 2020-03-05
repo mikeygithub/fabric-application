@@ -51,7 +51,7 @@ func (s *Proof) Invoke(APIstub shim.ChaincodeStubInterface) pb.Response {
 	// Route to the appropriate handler function to interact with the ledger appropriately
 	if function == "verify" {
 		return s.Verify(APIstub, args)
-	} else if function == "Deposit" {
+	} else if function == "deposit" {
 		return s.Deposit(APIstub, args)
 	}
 	return shim.Error("Invalid Smart Contract function name.")
