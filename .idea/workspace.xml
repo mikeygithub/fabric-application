@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="093080cb-4853-4341-ae3e-949a0f7c32d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fabric-application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/conf/app.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/controllers/default.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/routers/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/static/js/reload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/tests/default_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/client/views/index.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/org.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/server/routers/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/step.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/network.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/business/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/application/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/application/addToWallet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/application/buy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/application/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/application/redeem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/configuration/cli/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/configuration/cli/monitordocker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/ledger-api/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/ledger-api/statelist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/lib/paper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/lib/papercontract.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/lib/paperlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/contract/test/contract.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/gateway/networkConnection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/digibank/gateway/papernetConnection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/follwers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/highteach/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/innovate/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/application/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/application/addToWallet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/application/issue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/application/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/configuration/cli/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/configuration/cli/monitordocker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/ledger-api/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/ledger-api/statelist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/lib/paper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/lib/papercontract.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/lib/paperlist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/contract/test/contract.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/gateway/networkConnection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/magnetocorp/gateway/papernetConnection.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/network/README.md" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="consensus: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/server/routers/commentsRouter_controllers.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-319" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/server/routers/router.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+              <folding>
+                <element signature="e#301#393#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/server/conf/app.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/server/controllers/consensus.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/server/models/consensus.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-612" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../../DevTools/GoLang/go1.13.5.linux-amd64/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/network/docker-compose-etcdraft2.yaml" />
+        <option value="$PROJECT_DIR$/first-network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/first-network/base/docker-compose-base.yaml" />
+        <option value="$PROJECT_DIR$/first-network/docker-compose-e2e-template.yaml" />
+        <option value="$PROJECT_DIR$/first-network/docker-compose-couch.yaml" />
+        <option value="$PROJECT_DIR$/first-network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/first-network/byfn.sh" />
+        <option value="$PROJECT_DIR$/first-network/docker-compose-cli.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-e2e.yaml" />
+        <option value="$PROJECT_DIR$/network/base/peer-base.yaml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/application/business/README.md" />
+        <option value="$PROJECT_DIR$/application/highteach/README.md" />
+        <option value="$PROJECT_DIR$/application/innovate/README.md" />
+        <option value="$PROJECT_DIR$/application/follwer/README.md" />
+        <option value="$PROJECT_DIR$/chaincode/chaincode_proof/go/chaincode_proof.go" />
+        <option value="$PROJECT_DIR$/chaincode/chaincode_demo/install-chaincode.sh" />
+        <option value="$PROJECT_DIR$/chaincode/chaincode_proof/go/chaincode_example02.go" />
+        <option value="$PROJECT_DIR$/chaincode/chaincode_proof/install-chaincode.sh" />
+        <option value="$PROJECT_DIR$/network/docker-compose-ca.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-ca.yaml" />
+        <option value="$PROJECT_DIR$/network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/network/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-couch.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-couch.yaml" />
+        <option value="$PROJECT_DIR$/network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/network/configtx.yaml" />
+        <option value="$PROJECT_DIR$/network/byfn.sh" />
+        <option value="$PROJECT_DIR$/network/byfn.sh" />
+        <option value="$PROJECT_DIR$/network/docker-compose-e2e-template.yaml" />
+        <option value="$PROJECT_DIR$/network/base/docker-compose-base.yaml" />
+        <option value="$PROJECT_DIR$/network/base/docker-compose-base.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-e2e-template.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-cli.yaml" />
+        <option value="$PROJECT_DIR$/network/docker-compose-cli.yaml" />
+        <option value="$PROJECT_DIR$/network/scripts/utils.sh" />
+        <option value="$PROJECT_DIR$/network/scripts/utils.sh" />
+        <option value="$PROJECT_DIR$/network/scripts/script.sh" />
+        <option value="$PROJECT_DIR$/network/scripts/script.sh" />
+        <option value="$PROJECT_DIR$/network/README.md" />
+        <option value="$PROJECT_DIR$/network/README.md" />
+        <option value="$PROJECT_DIR$/application/README.md" />
+        <option value="$PROJECT_DIR$/application/server/main.go" />
+        <option value="$PROJECT_DIR$/application/server/README.md" />
+        <option value="$PROJECT_DIR$/application/server/conf/app.conf" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e25dbcde-d98a-440d-bc75-2be7614dcda2/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/application/server/routers/router.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="-2" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="fabric-application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/DATA/MIKEY/GolangWorkSpace/src/fabric-application" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="fabric-application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/DATA/MIKEY/GolangWorkSpace/src/fabric-application" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="fabric-application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/DATA/MIKEY/GolangWorkSpace/src/fabric-application" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="fabric-application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/DATA/MIKEY/GolangWorkSpace/src/fabric-application" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="application" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="server" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="routers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="fabric-application" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/DATA/MIKEY/GolangWorkSpace/src/fabric-application" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="network" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="GO_FMT" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../beeapi" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/server/server/controllers" />
+      <recent name="$PROJECT_DIR$/application/server" />
+      <recent name="$PROJECT_DIR$/network/connection" />
+      <recent name="$PROJECT_DIR$/first-network/connection" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/server/innovate" />
+      <recent name="$PROJECT_DIR$/application/server/highteach" />
+      <recent name="$PROJECT_DIR$/application/server/follwers" />
+      <recent name="$PROJECT_DIR$/application" />
+      <recent name="$PROJECT_DIR$/network" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="210.36.200.13" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="631d1142-adc8-4e48-a9ec-67db27c465c2" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://210.36.200.13:8899" />
+          <option name="urlPath" value="/system/record/add" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="rememberMe" />
+                <option name="value" value="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;" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="JSESSIONID" />
+                <option name="value" value="59cb323e-d7b0-4ebb-83cc-aa53c3d9a051" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="recordDate" />
+                <option name="value" value="2020-02-29" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tempAfternoon" />
+                <option name="value" value="36.9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tempMorning" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="health" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="fever" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="cough" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="weak" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="remark" />
+                <option name="value" value="广西柳州" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://210.36.200.13:8899" />
+          <option name="urlPath" value="/system/record/add" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="rememberMe" />
+                <option name="value" value="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;" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="JSESSIONID" />
+                <option name="value" value="59cb323e-d7b0-4ebb-83cc-aa53c3d9a051" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="recordDate" />
+                <option name="value" value="2020-02-29" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tempAfternoon" />
+                <option name="value" value="36.9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tempMorning" />
+                <option name="value" value="36.9" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="health" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="fever" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="cough" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="weak" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="remark" />
+                <option name="value" value="广西柳州" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="fabric-application" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="fabric-app" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="fabric-application" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="fabric-app" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449306" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32948583" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48688352" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32843652" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.72145146" visible="true" weight="0.613851" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.27854857" side_tool="true" weight="0.613851" />
+      <window_info anchor="bottom" id="REST Client" order="12" weight="0.64816755" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.23585913" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20864461" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48688352" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32843652" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.46424758" weight="0.70094436" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5357524" side_tool="true" weight="0.4616999" />
+      <window_info anchor="bottom" id="REST Client" order="12" weight="0.64816755" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/network/fabric-samples" />
+    </ignored-roots>
+    <MESSAGE value="init" />
+    <MESSAGE value="finish design smart contract" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish design smart contract" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/chaincode/chaincode_proof/go/chaincode_proof.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="51" column="22" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="22" />
+          <folding>
+            <element signature="e#946#1090#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/fabric-application.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../DevTools/GoLang/go1.13.5.linux-amd64/go/src/encoding/json/encode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/chaincode_proof/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chaincode/chaincode_proof/install-chaincode.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/connection/connection-org4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/crypto-config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose-couch.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3791">
+          <caret line="223" column="16" selection-start-line="223" selection-start-column="16" selection-end-line="223" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose-etcdraft2.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose-e2e.yaml" />
+    <entry file="file://$PROJECT_DIR$/chaincode/fabcar/javascript-low-level/fabcar.js" />
+    <entry file="file://$PROJECT_DIR$/network/configtx.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7259">
+          <caret line="427" column="23" selection-start-line="427" selection-start-column="23" selection-end-line="427" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose-e2e-template.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2652">
+          <caret line="156" column="23" selection-start-line="156" selection-start-column="23" selection-end-line="156" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/byfn.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2618">
+          <caret line="154" column="9" selection-start-line="154" selection-start-column="9" selection-end-line="154" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/scripts/utils.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/base/docker-compose-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2924">
+          <caret line="172" column="49" selection-start-line="172" selection-start-column="49" selection-end-line="172" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose-ca.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/docker-compose-cli.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/base/peer-base.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/scripts/script.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/connection/connection-org1.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/client/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#14#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/client/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/client/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/follwers/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/highteach/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/innovate/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/org.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/step.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/views/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/controllers/object.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/lastupdate.tmp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/go.sum">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/go.mod">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/tests/default_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/controllers/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/models/user.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e25dbcde-d98a-440d-bc75-2be7614dcda2/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/namespace.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e25dbcde-d98a-440d-bc75-2be7614dcda2/schema/consensus/table/consensus">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="45d428bd-c4df-4ad5-a2fb-6d0e2805c5d3">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/models/consensus.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/routers/commentsRouter_controllers.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/conf/app.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/routers/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <element signature="e#301#393#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/server/controllers/consensus.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
